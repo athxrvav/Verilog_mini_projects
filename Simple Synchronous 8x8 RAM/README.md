@@ -1,6 +1,6 @@
 # 8x8 Synchronous RAM
 
-A simple synchronous Random Access Memory (RAM) designed in Verilog, capable of storing 8 words of 8 bits each. <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/65b1a921-c85c-4b27-93aa-f5bd17d5d334" />
+A simple synchronous Random Access Memory (RAM) designed in Verilog, capable of storing 8 words of 8 bits each. 
 
 
 ## Files
