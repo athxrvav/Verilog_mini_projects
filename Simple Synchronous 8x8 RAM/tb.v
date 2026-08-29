@@ -35,7 +35,8 @@ initial begin
     rd_addr = 3'b100;
     #10;
     rd_addr = 3'b101;
-    
+    #20;
+    $finish();
 end
 initial begin
     $dumpfile("waveforms.vcd"); 
