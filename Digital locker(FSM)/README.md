@@ -20,11 +20,16 @@ The FSM consists of the following states to track the user's input:
 
 ## How to Run the Simulation
 
-This project is configured to be simulated using Icarus Verilog and viewed with GTKWave. Open your terminal in the project directory and run the following commands:
+This project is configured to be simulated using Icarus Verilog and viewed with GTKWave (or Vaporview). Open your terminal in the project directory and run the following commands:
+
+*Note: Testbench (`tb.v`) currently utilizes `` `include `` directives for all the sub-modules. Therefore, you only need to pass the testbench file to the compiler.*
+
+Run the following commands in your terminal:
 
 ### 1. Compile the code
 ```bash
-iverilog -o sim_out design.v tb.v
+iverilog -o sim_out tb.v
+```
 ```
 ### 2. Run the simulation
 ```bash
@@ -32,5 +37,5 @@ vvp sim_out
 ```
 
 ### 3. View the waveforms
-Running the simulation will automatically generate a `waveform.vcd` file. Open this file in **GTKWave** to view the timing diagrams and verify the state transitions.
+Running the simulation will automatically generate a `waveform.vcd` file. Open this file in **GTKWave/Vaporview** to view the timing diagrams and verify the state transitions.
 <img width="1103" height="365" alt="image" src="https://github.com/user-attachments/assets/c2f07df8-342b-402a-a71e-aaf953f1282c" />
