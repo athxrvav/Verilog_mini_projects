@@ -14,11 +14,15 @@ To achieve a depth of 32 words, a 5-bit address bus is used:
 
 ## How to Run the Simulation
 
-This project is configured to be simulated using Icarus Verilog and viewed with GTKWave. Open your terminal in the project directory and run the following commands:
+This project is configured to be simulated using Icarus Verilog and viewed with GTKWave (or Vaporview). Open your terminal in the project directory and run the following commands:
+
+*Note: Testbench (`tb.v`) currently utilizes `` `include `` directives for all the sub-modules. Therefore, you only need to pass the testbench file to the compiler.*
+
+Run the following commands in your terminal:
 
 ### 1. Compile the code
 ```bash
-iverilog -o sim_out design.v tb.v
+iverilog -o sim_out tb.v
 ```
 ### 2. Run the simulation
 ```bash
@@ -26,5 +30,5 @@ vvp sim_out
 ```
 
 ### 3. View the waveforms
-Running the simulation will automatically generate a `waveform.vcd` file. Open this file in **GTKWave** to view the timing diagrams and verify the tri-state bus and chip select signals.
+Running the simulation will automatically generate a `waveform.vcd` file. Open this file in **GTKWave/VaporView** to view the timing diagrams and verify the tri-state bus and chip select signals.
 <img width="1568" height="718" alt="image" src="https://github.com/user-attachments/assets/85337bbc-9beb-4bb9-b1b4-382957ac289f" />
