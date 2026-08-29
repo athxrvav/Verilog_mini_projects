@@ -28,6 +28,8 @@ initial begin
     @(negedge clk)
     data_in = 1'b0;
     submit = 1'b1;
+    #20;
+    $finish();
 end
     
 initial begin
