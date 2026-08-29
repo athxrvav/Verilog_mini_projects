@@ -1,3 +1,4 @@
+`include "design.v"
 module tb();
 
 reg clk,rst,data_in,submit;
