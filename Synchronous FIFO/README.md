@@ -28,7 +28,7 @@ vvp sim_out
 ```
 
 ### 3. View the waveforms
-Running the simulation will automatically generate a `waveform.vcd` file. Open this file in **GTKWave** to view the timing diagrams and verify the FSM transitions and FIFO pointer logic.
+Running the simulation will automatically generate a `waveform.vcd` file. Open this file in **GTKWave/Vaporview** to view the timing diagrams and verify the FSM transitions and FIFO pointer logic.
 
 
 <img width="1835" height="841" alt="image" src="https://github.com/user-attachments/assets/b5feac02-7dc5-479e-9016-65cc180ec0bf" />
