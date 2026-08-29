@@ -30,7 +30,7 @@ Run the following commands in your terminal:
 ```bash
 iverilog -o sim_out tb.v
 ```
-```
+
 ### 2. Run the simulation
 ```bash
 vvp sim_out
