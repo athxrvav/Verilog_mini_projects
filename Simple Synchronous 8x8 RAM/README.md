@@ -9,11 +9,15 @@ A simple synchronous Random Access Memory (RAM) designed in Verilog, capable of 
 
 ## How to Run the Simulation
 
-This project is configured to be simulated using Icarus Verilog and viewed with GTKWave. Open your terminal in the project directory and run the following commands:
+This project is configured to be simulated using Icarus Verilog and viewed with GTKWave (or Vaporview). Open your terminal in the project directory and run the following commands:
+
+*Note: Testbench (`tb.v`) currently utilizes `` `include `` directives for all the sub-modules. Therefore, you only need to pass the testbench file to the compiler.*
+
+Run the following commands in your terminal:
 
 ### 1. Compile the code
 ```bash
-iverilog -o sim_out design.v tb.v
+iverilog -o sim_out tb.v
 ```
 ### 2. Run the simulation
 ```bash
@@ -21,6 +25,6 @@ vvp sim_out
 ```
 
 ### 3. View the waveforms
-Running the simulation will automatically generate a `waveforms.vcd` file. Open this file in **GTKWave** to view the timing diagrams and signal changes.
+Running the simulation will automatically generate a `waveforms.vcd` file. Open this file in **GTKWave/Vaporview** to view the timing diagrams and signal changes.
 
 <img width="1840" height="511" alt="Screenshot From 2026-08-28 17-29-07" src="https://github.com/user-attachments/assets/82f089af-5804-4ce2-bd8d-340502da4fdf" />
